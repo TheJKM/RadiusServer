@@ -56,5 +56,31 @@
         }
     ],
     "volumes":[],
-    "networks":[]
+    "networks":[],
+    "environment":[
+        {
+            "name":"RADIUS_LISTEN_IP_RANGE",
+            "description":"The IP-Range or specific IP the Radius-Server shall listen to.  Make sure all IPs of all access points are covered. Examples are '192.168.178.0/24' for a 192.168.178.*-network or '172.16.0.0/16' for a 172.16.*.*-network."
+        },
+        {
+            "name":"RADIUS_PASSWORD",
+            "description":"Passwords for the Radius-Server that will need to be entered in the access points."
+        },
+        {
+            "name":"RADIUS_REQUIRE_TEACHER",
+            "description":"Temporarily var, will be removed soon. Use 'true' or 'false'."
+        },
+        {
+            "name":"SLAPD_PASSWORD",
+            "description":""
+        },
+        {
+            "name":"SLAPD_DOMAIN0",
+            "description":""
+        },
+        {
+            "name":"SLAPD_DOMAIN1",
+            "description":""
+        }
+    ]
 }

@@ -3,7 +3,6 @@
         {
             "name":"freeradius",
             "hostname":"freeradius",
-            "restart":"always",
             "ports":[
                 {
                     "external":"1812/udp",
